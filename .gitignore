@@ -1,0 +1,15 @@
+# Docs
+MEMORY.md
+CLAUDE.md
+
+# Output (generated files)
+output/
+
+# Config with API keys
+config.json
+!config.json.template
+
+# Python
+__pycache__/
+*.pyc
+venv/

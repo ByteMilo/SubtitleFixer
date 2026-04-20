@@ -1,0 +1,39 @@
+1
+00:00:01,000 --> 00:00:05,000
+Hello everyone, welcom to my channel!
+
+2
+00:00:05,500 --> 00:00:10,000
+Today were going to talk about OpenCloud.
+
+3
+00:00:10,500 --> 00:00:15,000
+OpenCloud is a powerfull terminal emulator.
+
+4
+00:00:15,500 --> 00:00:20,000
+Its realy fast and has many featurs.
+
+5
+00:00:20,500 --> 00:00:25,000
+You can install it on Windows, Linus, or Mac.
+
+6
+00:00:25,500 --> 00:00:30,000
+First, you nead to download the installer.
+
+7
+00:00:30,500 --> 00:00:35,000
+Then, run the setup and folow the prompts.
+
+8
+00:00:35,500 --> 00:00:40,000
+After instalation, you can lauch OpenCloud.
+
+9
+00:00:40,500 --> 00:00:45,000
+The interface is clean and modern.
+
+10
+00:00:45,500 --> 00:00:50,000
+IRecomend it to every developer!

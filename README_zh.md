@@ -1,4 +1,4 @@
-# 字幕工具
+# SubtitleFixer
 
 AI 字幕校对 & YouTube 元数据生成工具
 

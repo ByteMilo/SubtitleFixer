@@ -1,4 +1,4 @@
-# subtitle_tool
+# SubtitleFixer
 
 AI Subtitle Correction & YouTube Metadata Generator
 

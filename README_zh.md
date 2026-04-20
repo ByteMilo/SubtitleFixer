@@ -2,6 +2,8 @@
 
 AI 字幕校对 & YouTube 元数据生成工具
 
+📖 [English README](README.md)
+
 功能：
 - **字幕校对** — 用 AI 修正字幕错误
 - **YouTube 标题生成** — 生成 5 个吸引人的标题
@@ -13,8 +15,7 @@ AI 字幕校对 & YouTube 元数据生成工具
 ### 1. 首次设置（只设置一次）
 
 ```bash
-cd ~/subtitle_project
-python main.py --wizard
+venv\Scripts\python main.py --setup
 ```
 
 按提示输入：
@@ -24,10 +25,10 @@ python main.py --wizard
 
 ### 2. 使用方法
 
-将字幕文件（SRT/VTT）放到 `important/` 文件夹，然后运行：
+将字幕文件（SRT/VTT）放到 `input/` 文件夹，然后运行：
 
 ```bash
-python main.py --auto
+venv\Scripts\python main.py --auto
 ```
 
 会显示菜单让你选择文件，然后自动处理！
@@ -35,24 +36,21 @@ python main.py --auto
 ## 工作流程
 
 ```
-important/           output/
+input/                output/
 ├── video1.srt   →   video1/
 ├── video2.srt   →   ├── video1_corrected.srt
 └── video3.srt       ├── correction_report.json
-                      ├── titles.json
-                      ├── description.txt
-                      ├── chapters.json
-                      └── keywords.json
+                      └── youtube_info.txt (标题、简介、章节、关键词)
 ```
 
 ## 命令
 
 | 命令 | 说明 |
 |------|------|
-| `--wizard` | 向导模式，设置 API |
-| `--auto` | 自动模式，从 important 读取 |
-| `--input xxx.srt` | 处理指定文件 |
-| `--output output/` | 指定输出目录 |
+| `--setup` / `-s` | 设置模式，配置 API |
+| `--auto` / `-a` | 自动模式，从 input 读取 |
+| `--input` / `-i` | 处理指定文件 |
+| `--output` / `-o` | 指定输出目录（默认：output） |
 
 ## 输出文件
 
@@ -62,14 +60,11 @@ important/           output/
 |------|------|
 | `*_corrected.srt` | 校对后的字幕 |
 | `correction_report.json` | 校对报告 |
-| `titles.json` | 5 个标题建议 |
-| `description.txt` | 视频简介 |
-| `chapters.json` | 章节时间点 |
-| `keywords.json` | SEO 关键词 |
+| `youtube_info.txt` | YouTube 全部内容（标题、简介、章节、关键词） |
 
-## 科技名词
+## 术语配置
 
-编辑 `dict/tech_terms.json` 添加你的专有名词。
+编辑 `dict/frequently_used_terms.json` 和 `dict/corrections.json` 自定义术语和纠正规则。
 
 ## API
 
@@ -79,11 +74,11 @@ important/           output/
 
 ```bash
 # 设置 API（首次）
-python main.py --wizard
+venv\Scripts\python main.py --setup
 
 # 处理字幕（自动选择）
-python main.py --auto
+venv\Scripts\python main.py --auto
 
 # 或指定文件
-python main.py --input important/video.srt
+venv\Scripts\python main.py --input input/video.srt --output output/
 ```

@@ -67,12 +67,10 @@ input/                output/
 编辑以下两个文件来自定义术语和纠正规则：
 
 ### `dict/frequently_used_terms.json` — 常用术语
-常用专业术语，AI 会自动识别并保持一致。例如：
+专业术语列表，AI 会自动识别并在字幕中保持一致。例如：
 ```json
 {
-  "术语": "正确写法",
-  "AI Model": "AI 模型",
-  "Machine Learning": "机器学习"
+  "terms": ["AI", "机器学习", "GPT", "API", "GPU"]
 }
 ```
 

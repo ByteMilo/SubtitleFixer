@@ -67,11 +67,10 @@ Each video gets its own folder containing:
 Edit these two files to customize terminology and corrections:
 
 ### `dict/frequently_used_terms.json` — Common Terms
-Professional terms that AI will recognize and keep consistent. Example:
+A list of professional terms that AI will recognize and keep consistent across subtitles. Example:
 ```json
 {
-  "AI Model": "AI Model",
-  "Machine Learning": "Machine Learning"
+  "terms": ["AI", "Machine Learning", "GPT", "API", "GPU"]
 }
 ```
 

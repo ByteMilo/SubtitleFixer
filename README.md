@@ -2,6 +2,8 @@
 
 AI Subtitle Correction & YouTube Metadata Generator
 
+📖 [中文版 README](README_zh.md)
+
 Features:
 - **Subtitle Correction** — Fix subtitle errors using AI
 - **YouTube Title Generation** — Generate 5 catchy titles

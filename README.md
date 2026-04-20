@@ -12,8 +12,36 @@ Features:
 
 ## Quick Start
 
-### 1. First-Time Setup (once only)
+## Installation
 
+### 1. Clone the repository
+```bash
+git clone https://github.com/ByteMilo/SubtitleFixer.git
+cd SubtitleFixer
+```
+
+### 2. Create virtual environment
+```bash
+python -m venv venv
+```
+
+### 3. Activate virtual environment
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
+**macOS/Linux:**
+```bash
+source venv/bin/activate
+```
+
+### 4. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Run setup
 ```bash
 venv\Scripts\python main.py --setup
 ```

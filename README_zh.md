@@ -12,8 +12,36 @@ AI 字幕校对 & YouTube 元数据生成工具
 
 ## 快速开始
 
-### 1. 首次设置（只设置一次）
+## 安装
 
+### 1. 克隆项目
+```bash
+git clone https://github.com/ByteMilo/SubtitleFixer.git
+cd SubtitleFixer
+```
+
+### 2. 创建虚拟环境
+```bash
+python -m venv venv
+```
+
+### 3. 激活虚拟环境
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
+**macOS/Linux:**
+```bash
+source venv/bin/activate
+```
+
+### 4. 安装依赖
+```bash
+pip install -r requirements.txt
+```
+
+### 5. 运行设置
 ```bash
 venv\Scripts\python main.py --setup
 ```

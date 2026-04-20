@@ -64,7 +64,29 @@ input/                output/
 
 ## 术语配置
 
-编辑 `dict/frequently_used_terms.json` 和 `dict/corrections.json` 自定义术语和纠正规则。
+编辑以下两个文件来自定义术语和纠正规则：
+
+### `dict/frequently_used_terms.json` — 常用术语
+常用专业术语，AI 会自动识别并保持一致。例如：
+```json
+{
+  "术语": "正确写法",
+  "AI Model": "AI 模型",
+  "Machine Learning": "机器学习"
+}
+```
+
+### `dict/corrections.json` — 常见错误纠正
+常见拼写错误和格式问题，AI 会自动修复。例如：
+```json
+{
+  "teh": "the",
+  "thier": "their",
+  "  ": " "
+}
+```
+
+添加你自己的术语和错误模式即可生效。
 
 ## API
 

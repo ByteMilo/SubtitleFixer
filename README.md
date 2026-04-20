@@ -64,7 +64,28 @@ Each video gets its own folder containing:
 
 ## Tech Terms
 
-Edit `dict/frequently_used_terms.json` and `dict/corrections.json` to customize terminology and corrections.
+Edit these two files to customize terminology and corrections:
+
+### `dict/frequently_used_terms.json` — Common Terms
+Professional terms that AI will recognize and keep consistent. Example:
+```json
+{
+  "AI Model": "AI Model",
+  "Machine Learning": "Machine Learning"
+}
+```
+
+### `dict/corrections.json` — Common Corrections
+Common spelling and formatting errors that AI will auto-fix. Example:
+```json
+{
+  "teh": "the",
+  "thier": "their",
+  "  ": " "
+}
+```
+
+Just add your own terms and error patterns — they take effect automatically.
 
 ## API
 
